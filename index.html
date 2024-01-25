@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Patinhas de Ouro</title>
+   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main>
+      <img src="assets/user.png" alt="">
+      <h2>Usuário</h2>
+      <input type="text" id="usuario" class="entrada" placeholder="Digite seu usuário">
+      <h2>Senha</h2>
+      <div class="senha-container">
+         <input type="password" id="senha" class="entrada" placeholder="Digite sua senha">
+         <img src="assets/olho_fechado.png" alt="" class="olho-icon" onclick="mostrarSenha()" style="display: none;">
+      </div>
+      <p style="margin-left: 20px;"><input type="checkbox" name="checkbox" id="checkbox">Lembrar login</p>
+      <p class="login" id="fazerlogin">Fazer login</p>
+      <p class="register_ancora">Não tem uma conta? <a href="register.html">Registre-se</a>.</p>
+   </main>
+   <script src="scripts.js"></script>
+   <script>
+      var senhaInput = document.getElementById('senha');
+      var olhoIcon = document.querySelector('.olho-icon');
+      function mostrarSenha() {
+          senhaInput.type = (senhaInput.type === 'password') ? 'text' : 'password';
+          olhoIcon.src = (senhaInput.type === 'password')
+              ? 'assets/olho_fechado.png'
+              : 'assets/olho_aberto.png';
+      }
+      senhaInput.addEventListener('input', function () {
+          olhoIcon.style.display = (senhaInput.value.length > 0) ? 'inline-block' : 'none';
+      });
+      window.addEventListener('load', function () {
+          olhoIcon.style.display = (senhaInput.value.length > 0) ? 'inline-block' : 'none';
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   background-image: linear-gradient(to right, #130CE8, #0C4AE8);
+}
+
+main {
+   background-color: white;
+   margin: 30px auto;
+   width: 550px;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 5px 5px 15px #082f92;
+}
+h1 {
+   margin-top: 0px;
+   text-align: center;
+   color: #5B0CE8;
+   font-size: 50px;
+}
+
+h2 {
+   margin-left: 20px;
+   margin-bottom: 5px;
+   font-size: 25px;
+}
+
+.entrada {
+   width: 500px;
+   text-align: left;
+   padding: 10px;
+   border-radius: 10px;
+   display: block;
+   margin: auto;
+   font-size: 20px;
+}
+.login {
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:18px;
+   border-radius: 8px;
+   padding: 10px;
+   color:#ffffff;
+   background-color: #0C4AE8;
+   outline: none;
+   border: none;
+   font-size: 22px;
+   cursor:pointer;
+   width: 200px;
+   margin: 0px auto;
+   display: block;
+   text-decoration: none;
+   font-weight: bold;
+   text-align: center;
+   transition: .4s;
+   
+   }
+   
+   .login:hover {
+   color:#ffffff;
+   background-color: #061d57;
+   padding-left: 15px;
+   padding-right: 15px;
+   }
+
+img {
+   width: 120px;
+   display: block;
+   margin: auto;
+}
+
+.register_ancora {
+   margin-left: 20px;
+}
+.senha-container {
+   position: relative;
+}
+
+.olho-icon {
+   cursor: pointer;
+   position: absolute;
+   right: 29px; /* Ajuste a distância da borda direita conforme necessário */
+   bottom: 50%;
+   transform: translateY(50%);
+   width: 20px; /* Ajuste a largura conforme necessário */
+   height: 20px; /* Ajuste a altura conforme necessário */
+}
