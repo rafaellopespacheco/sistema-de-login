@@ -108,6 +108,11 @@ h3 {
 .register_ancora {
    text-align: center;
 }
+
+.register_ancora a {
+   color: #A05BFF;
+   font-weight: bolder;
+}
 .senha-container {
    position: relative;
 }
