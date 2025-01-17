@@ -1,9 +1,26 @@
-document.getElementById('fazerlogin').addEventListener('click', function () {
-   var usuario = document.getElementById('usuario').value;
-   var senha = document.getElementById('senha').value;
+const formulario = document.getElementById('formulario');
 
-   alert(`O login que você enviou foi.\n Usuário: ${usuario}\n Senha: ${senha}`)
+formulario.addEventListener('submit', function (evento) {
+   evento.preventDefault();
+   const usuario = document.getElementById('usuario').value.trim();
+   const senha = document.getElementById('senha').value.trim();
+   const erro = document.getElementById('erro');
+
+   if (!usuario || !senha) {
+      erro.innerHTML = 'Você deve preencher todos os campos!';
+      erro.style.color = 'red'
+   } else {
+      erro.innerHTML = `
+      Você fez login com sucesso!
+      <p>Email: ${usuario}</p>
+      <p>Senha: ${senha}</p>
+      `;
+      erro.style.color = 'green'
+      formulario.reset()
+   }
 });
+
+/* OLHO VER SENHA */
 
 var senhaInput = document.getElementById('senha');
 var olhoIcon = document.querySelector('.olho-icon');

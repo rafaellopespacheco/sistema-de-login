@@ -80,6 +80,7 @@ h3 {
    margin-bottom: 30px;
 }
 .login {
+   margin-bottom: 30px;
    font-family:Arial, Helvetica, sans-serif;
    font-size: 1em;
    border-radius: 8px;
@@ -132,6 +133,13 @@ h3 {
    justify-content: start; /* Garante o alinhamento ao início */
    align-items: center; /* Centraliza verticalmente os itens */
    gap: 10px;
+}
+
+#erro {
+   display: block;
+   width: 100%;
+   color: red;
+   text-align: center;
 }
 
 .checkbox-personalizado {

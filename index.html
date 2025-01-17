@@ -17,16 +17,19 @@
          <div class="containerlogin">
             <h2>Login</h2>
             <p>Bem vindo de volta! Por favor faça login com a sua conta.</p>
-            <label for="usuario">Usuário</label>
-            <input type="text" id="usuario" class="entrada" placeholder="Digite seu usuário">
-            <label for="senha">Senha</label>
-            <div class="senha-container">
-               <input type="password" id="senha" class="entrada" placeholder="Digite sua senha">
-               <img src="assets/olho_fechado.png" alt="" class="olho-icon" onclick="mostrarSenha()" style="display: none;">
-            </div>
-            <p class="lembrarlogin"><input type="checkbox" name="checkbox" id="checkbox" class="checkbox-personalizado">Lembrar login</p>
-            <p class="login" id="fazerlogin">Login</p>
-            <p class="register_ancora">Não tem uma conta? <a href="#">Registre-se</a>.</p>
+            <form id="formulario">
+               <label for="usuario">Email</label>
+               <input type="email" id="usuario" class="entrada" placeholder="Digite seu email">
+               <label for="senha">Senha</label>
+               <div class="senha-container">
+                  <input type="password" id="senha" class="entrada" placeholder="Digite sua senha" >
+                  <img src="assets/olho_fechado.png" alt="" class="olho-icon" onclick="mostrarSenha()" style="display: none;">
+               </div>
+               <span id="erro"></span>
+               <p class="lembrarlogin"><input type="checkbox" name="checkbox" id="checkbox" class="checkbox-personalizado">Lembrar login</p>
+               <button type="submit" class="login" id="fazerlogin">Fazer Login</button>
+               <p class="register_ancora">Não tem uma conta? <a href="#">Registre-se</a>.</p>
+            </form>
          </div>
       </div>
    </main>
